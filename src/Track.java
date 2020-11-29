@@ -1,5 +1,5 @@
 public class Track {
-    private int maxDistance;
+    private final int maxDistance;
 
     public Track(int maxDistance) {
         this.maxDistance = maxDistance;

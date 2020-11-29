@@ -1,6 +1,6 @@
 public class Human implements Running, Jumping {
-    private int maxDistance;
-    private int heightJump;
+    private final int maxDistance;
+    private final int heightJump;
 
     public Human(int maxDistance, int height) {
         this.maxDistance = maxDistance;

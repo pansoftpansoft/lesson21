@@ -1,6 +1,6 @@
 public class Cat implements Running, Jumping {
-    private int maxDistance;
-    private int heightJump;
+    private final int maxDistance;
+    private final int heightJump;
     public Cat(int maxDistance, int height){
         this.maxDistance=maxDistance;
         this.heightJump=height;

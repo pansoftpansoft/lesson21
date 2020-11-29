@@ -11,9 +11,9 @@ public class Zoo {
         Object[] barrier;
         barrier = new Object[4];
         barrier[0] = new Track(50);
-        barrier[1] = new Parete(1);
+        barrier[1] = new Pareto(1);
         barrier[2] = new Track(100);
-        barrier[3] = new Parete(2);
+        barrier[3] = new Pareto(2);
 
         for (Object p : player) {
             finish = true;
@@ -25,8 +25,8 @@ public class Zoo {
                         break;
                     }
                 }
-                if (b instanceof Parete) {
-                    if (!((Parete) b).jumpOverWall((Jumping) p)) {
+                if (b instanceof Pareto) {
+                    if (!((Pareto) b).jumpOverWall((Jumping) p)) {
                         finish = false;
                         break;
                     }
@@ -37,7 +37,7 @@ public class Zoo {
             } else {
                 System.out.println(p.toString() + " сошел с полосы препятствий!");
             }
-            System.out.println("");
+            System.out.println(" ");
         }
     }
 }
