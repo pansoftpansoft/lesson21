@@ -29,8 +29,9 @@ public class Robot implements Running, Jumping {
             return false;
         }
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return "Робот";
     }
 }

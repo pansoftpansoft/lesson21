@@ -29,8 +29,9 @@ public class Human implements Running, Jumping {
             return false;
         }
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return "Человек";
     }
 }

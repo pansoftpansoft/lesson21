@@ -1,10 +1,12 @@
 public class Cat implements Running, Jumping {
     private final int maxDistance;
     private final int heightJump;
-    public Cat(int maxDistance, int height){
-        this.maxDistance=maxDistance;
-        this.heightJump=height;
+
+    public Cat(int maxDistance, int height) {
+        this.maxDistance = maxDistance;
+        this.heightJump = height;
     }
+
     @Override
     public boolean run(int distance) {
         if (maxDistance > distance) {
@@ -27,8 +29,9 @@ public class Cat implements Running, Jumping {
             return false;
         }
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return "Кошка";
     }
 }
