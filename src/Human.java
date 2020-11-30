@@ -19,6 +19,7 @@ public class Human implements Running, Jumping {
 
     }
 
+
     @Override
     public boolean jump(int height) {
         if (heightJump > height) {
